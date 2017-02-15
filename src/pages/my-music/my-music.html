@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Music</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div ion-fixed>
+    <button (click)="recordBtn()" id="rec" ion-button outline item-right icon-left>
+      <ion-icon [name]="iconRecordBtn"></ion-icon>
+      record
+    </button>
+    <div id="piano">
+      <div class="keys">
+        <a class="key" (click)="playNote('gb')"></a>
+        <a class="key black black1" (click)="playNote('a')"></a>
+        <a class="key" (click)="playNote('bb')"></a>
+        <a class="key black black3" (click)="playNote('b')"></a>
+        <a class="key" (click)="playNote('c')"></a>
+        <a class="key" (click)="playNote('cb')"></a>
+        <a class="key black black1" (click)="playNote('d')"></a>
+        <a class="key" (click)="playNote('eb')"></a>
+        <a class="key black black2" (click)="playNote('e')"></a>
+        <a class="key" (click)="playNote('f')"></a>
+        <a class="key black black3" (click)="playNote('fb')"></a>
+        <a class="key" (click)="playNote('g')"></a>
+      </div>
+    </div>
+  </div>
+</ion-content>
